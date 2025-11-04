@@ -1,1 +1,33 @@
 # YouTube-Analysis
+
+#### The *primary goal* of this project is to analyze data from YouTube videos to find what correlates with a successful video. After that, the *secondary goal* is to make a program that takes in metrics from any video and gives an estimate on what needs to be improved on.
+
+## Goals (Subject To Change)
+1. Ideate & Create this project
+2. Document this project (continually)
+3. Complete the required assignments for this project (continually)
+4. Primary Goal: Analyze Data
+    1. Wrangle the csv into Pandas Dataframes
+    2. Investigate possible correlations
+    3. Widdle that down to a few top metrics
+    4. Get day to day data from a couple of videos that performed unexpectedly well or poorly
+    5. Use the top metrics and the finer details to conclude which metrics were most important
+    6. Write these conclusions with graphs in a report style markdown file
+5. Secondary Goal: Program an Analysis Tool
+    1. Collect averages from my videos (successful and unsuccessful) and store those in a program
+    2. Create a program that takes in a csv value and points out abnormal figures (both good and bad)
+    3. Make a short tutorial for how to input this data
+    4. Write some possible interpretations for these abnormal figures
+6. Strech Goals:
+    1. Create a UI for this program
+    2. Make it so that the UI displays graphs for the main metrics
+    3. Make the UI look very clean
+
+### Goal Log
+| Goal | Date | Time | TOTAL | Notes |
+| ---  | ---  | ---  | ----- | ----- |
+| Ideation | 11/1 | 0:25 | 0:25 | Brainstormed a whole lot of ideas |
+| Ideation | 11/2 | 2:00 | 2:25 | Had an idea involving seed cracking (Minecraft) but the approach would take far too long for a short project like this, eventually moved on |
+| Ideation & Creation | 11/3 | 2:00 | 4:25 | Finally decided on the subject matter of this project, and I additionally pulled all my YouTube data into a google sheet to start to understand better what I am working with and what approach I want to take |
+| Documentation | 11/4 | 3:00 | 7:25 | Put the pen to the GitHub Paper and thought through the goals of this project | 
+| To | Be | Continued | Over | Time... |
