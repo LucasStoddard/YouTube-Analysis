@@ -30,4 +30,5 @@
 | Ideation | 11/2 | 2:00 | 2:25 | Had an idea involving seed cracking (Minecraft) but the approach would take far too long for a short project like this, eventually moved on |
 | Ideation & Creation | 11/3 | 2:00 | 4:25 | Finally decided on the subject matter of this project, and I additionally pulled all my YouTube data into a google sheet to start to understand better what I am working with and what approach I want to take |
 | Documentation | 11/4 | 3:00 | 7:25 | Put the pen to the GitHub Paper and thought through the goals of this project | 
+| Assignment | 11/4 | 0:35 | 8:00 | [Initial Design Document](./Initial-Design/Initial-Design.md) |
 | To | Be | Continued | Over | Time... |
