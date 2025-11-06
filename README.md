@@ -31,4 +31,6 @@
 | Ideation & Creation | 11/3 | 2:00 | 4:25 | Finally decided on the subject matter of this project, and I additionally pulled all my YouTube data into a google sheet to start to understand better what I am working with and what approach I want to take |
 | Documentation | 11/4 | 3:00 | 7:25 | Put the pen to the GitHub Paper and thought through the goals of this project | 
 | Assignment | 11/4 | 0:35 | 8:00 | [Initial Design Document](./Initial-Design/Initial-Design.md) |
+| Wrangle CSV | 11/6 | 0:15 | 8:15 | Wasn't too bad, wrote some instructions and created [data_analysis.py](./Data-Analysis/data_analysis.py)|
+| Investigate Data | 11/6 | 1:45 | 10:00 | Edited [data_analysis.py](./Data-Analysis/data_analysis.py) lines 27 - 187, mainly investigated retention % and retention time, found retention time does almost nothing but also that retention % has a correlation, but only a very slight positive one |
 | To | Be | Continued | Over | Time... |
