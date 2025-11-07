@@ -165,13 +165,13 @@ def n_to_m_videos_views_and_retention_raw_trendline(n, m):
 
     # Plot the trend line. We use LaTeX for the R^2 notation.
     ax.plot(views, trend_line, linestyle='--', color='red', 
-            label=f'Trend Line ($\mathregular{{R^2}}$ = {r_squared:.2f}, $p$ = {p_value:.4f}))')
+            label=f'Trend Line ($\mathregular{{R^2}}$ = {r_squared:.2f}, $p$ = {p_value:.4f})')
 
     ax.set_xscale('log')
     ax.set_xlabel('Views (Log Scale)', fontsize=12)
     ax.set_ylabel('Average Percentage Viewed (%)', fontsize=12)
     ax.set_title('Views vs. Viewer Retention with Logarithmic Trend Line', fontsize=14)
-    ax.set_xlim(views.min() * 0.8, views.max() * 1.2)
+    ax.set_xlim(views.min() * 0.1, views.max() * 1.2)
     ax.grid(True, linestyle='--', alpha=0.6, which="both") 
     ax.legend(loc='upper right')
 
@@ -181,7 +181,7 @@ def n_to_m_videos_views_and_retention_raw_trendline(n, m):
     print(f"R-squared value: {r_squared:.4f}")
     print(f"Chart saved as {name}")
 
-n_to_m_videos_views_and_retention_raw_trendline(2, 300)
+n_to_m_videos_views_and_retention_raw_trendline(1, 100)
 
 # Observations:
 #   Okay, raw watch time has NO correlation. While r-squared is small, the p-value is like 0 so there definitely IS an effect, just not as much as one would hope

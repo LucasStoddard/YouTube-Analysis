@@ -31,6 +31,7 @@
 | Ideation & Creation | 11/3 | 2:00 | 4:25 | Finally decided on the subject matter of this project, and I additionally pulled all my YouTube data into a google sheet to start to understand better what I am working with and what approach I want to take |
 | Documentation | 11/4 | 3:00 | 7:25 | Put the pen to the GitHub Paper and thought through the goals of this project | 
 | Assignment | 11/4 | 0:35 | 8:00 | [Initial Design Document](./Initial-Design/Initial-Design.md) |
-| Wrangle CSV | 11/6 | 0:15 | 8:15 | Wasn't too bad, wrote some instructions and created [data_analysis.py](./Data-Analysis/data_analysis.py)|
-| Investigate Data | 11/6 | 1:45 | 10:00 | Edited [data_analysis.py](./Data-Analysis/data_analysis.py) lines 27 - 187, mainly investigated retention % and retention time, found retention time does almost nothing but also that retention % has a correlation, but only a very slight positive one |
+| Wrangle CSV | 11/6 | 0:15 | 8:15 | Wasn't too bad, wrote some instructions and created [data_analysis_tinkering.py](./Data-Analysis/data_analysis_tinkering.py)|
+| Investigate Data | 11/6 | 1:45 | 10:00 | Edited [data_analysis_tinkering.py](./Data-Analysis/data_analysis_tinkering.py) lines 27 - 187, mainly investigated retention % and retention time, found retention time does almost nothing but also that retention % has a correlation, but only a very slight positive one |
+| Investigate Data | 11/7 | 1:00 | 11:00 | Made [data_analysis_clean.py](./Data-Analysis/data_analysis_clean.py) which is a much more flexible program and allows for easy scanning of a lot of graphs, I may be been too quick to dismiss some metrics, but other ones are proving to be extremely inconsistent |
 | To | Be | Continued | Over | Time... |
