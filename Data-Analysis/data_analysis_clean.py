@@ -107,3 +107,4 @@ batchViewComparison(batchComparisons)
     #   Like you can argue "well if you get subscribers then the video will do better" but funnily enough an even more positive trend is losing subscribers
     # Once again, average percentage viewed is a very strong indicator, but it really is not the final say
     # I think with some of these I need to dig deeper into the day to day graphs on individual videos.
+# TODO: More lines and choose 5 metrics which are most likely to have an effect on views for the fine detail search

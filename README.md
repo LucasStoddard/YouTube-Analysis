@@ -34,4 +34,5 @@
 | Wrangle CSV | 11/6 | 0:15 | 8:15 | Wasn't too bad, wrote some instructions and created [data_analysis_tinkering.py](./Data-Analysis/data_analysis_tinkering.py)|
 | Investigate Data | 11/6 | 1:45 | 10:00 | Edited [data_analysis_tinkering.py](./Data-Analysis/data_analysis_tinkering.py) lines 27 - 187, mainly investigated retention % and retention time, found retention time does almost nothing but also that retention % has a correlation, but only a very slight positive one |
 | Investigate Data | 11/7 | 1:00 | 11:00 | Made [data_analysis_clean.py](./Data-Analysis/data_analysis_clean.py) which is a much more flexible program and allows for easy scanning of a lot of graphs, I may be been too quick to dismiss some metrics, but other ones are proving to be extremely inconsistent |
+| Assignment | 11/14 | 4:00 | 15:00 | Created System Design and a more robust ERD in Google Drive |
 | To | Be | Continued | Over | Time... |
