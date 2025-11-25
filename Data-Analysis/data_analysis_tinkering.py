@@ -178,7 +178,9 @@ def n_to_m_videos_views_and_retention_raw_trendline(n, m):
     plt.tight_layout()
     name = f"{n}_to_{m}_views_vs_retention_raw_log_trend.png"
     plt.savefig(name)
-    print(f"R-squared value: {r_squared:.4f}")
+    print(f"R-squared value: {r_squared:.8f}")
+    print(f"P value: {p_value:.8f}")
+    print(f"intercept: {p_value:.8f}")
     print(f"Chart saved as {name}")
 
 n_to_m_videos_views_and_retention_raw_trendline(1, 100)

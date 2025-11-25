@@ -40,9 +40,22 @@ def n_to_m_videos_generic(log, n, m, x_label, y_label):
     top_videos = video_data_df.sort_values(by=x_label, ascending=False).reset_index(drop=True)
     top_n_to_m_videos = top_videos.iloc[n - 1: m].copy()
     # remove zero values
-    filtered_videos = top_n_to_m_videos[top_n_to_m_videos[y_label] != 0].copy()
-    x_values = pd.to_numeric(filtered_videos[x_label], errors='coerce').values 
+    filtered_videos = top_n_to_m_videos.dropna(subset=[x_label, y_label]).copy()
+    
+    # 2. Ensure x_label (Views) is strictly positive for log transformation
+    # and ensure y_label is not zero (as per original logic).
+    filtered_videos = filtered_videos[
+        (filtered_videos[x_label] > 0) & 
+        (filtered_videos[y_label] != 0) 
+    ].copy()
+    
+    x_values = filtered_videos[x_label].values 
     y_values = filtered_videos[y_label].values
+    
+    # 3. Check if we still have enough data points for linregress (minimum 2)
+    if len(x_values) < 2:
+        print(f"Skipping comparison '{x_label}' vs '{y_label}' for videos {n} to {m}. Not enough valid data points ({len(x_values)} < 2) after filtering.")
+        return
 
     sort_order = np.argsort(x_values)
     x_values = x_values[sort_order]
@@ -57,7 +70,7 @@ def n_to_m_videos_generic(log, n, m, x_label, y_label):
 
     # Plot the trend line. We use LaTeX for the R^2 notation.
     ax.plot(x_values, trend_line, linestyle='--', color='red', 
-            label=f'Trend Line ($\mathregular{{R^2}}$ = {r_squared:.2f}, $p$ = {p_value:.4f}, $stderr$ = {std_err:.4f})')
+            label=f'Trend Line ($\mathregular{{R^2}}$ = {r_squared:.8f}, $p$ = {p_value:.8f}, $stderr$ = {std_err:.8f})')
 
     if (log):
         ax.set_xscale('log')
@@ -71,14 +84,19 @@ def n_to_m_videos_generic(log, n, m, x_label, y_label):
     plt.tight_layout()
     name = f"{n}_to_{m}_{x_label}_vs_{y_label}.png"
     plt.savefig(name)
-    print(f"R-squared value: {r_squared:.4f}")
+    print(f"R: {r_squared:.8f}")
+    print(f"S: {slope:.8f}")
+    print(f"P: {p_value:.8f}")
+    print(f"s: {std_err:.8f}")
+    print(f"I: {intercept:.8f}")
+
     print(f"Chart saved as {name}")
 
 # n_to_m_videos_generic(False, 2, 300, 'Views', 'Comments added')
 
 def batchViewComparison(compArray):
     for comparison in compArray:
-        n_to_m_videos_generic(False, 6, 100, 'Views', comparison)
+        n_to_m_videos_generic(False, 6, 300, 'Views', comparison)
 # Video title,Video publish time,Duration,Average view duration,Average percentage viewed (%),Subscribers gained,Subscribers lost,
 # Likes,Dislikes,Likes (vs. dislikes) (%),Shares,Comments added,Views,Watch time (hours),Subscribers,Impressions,Impressions click-through rate (%)
 batchComparisons = [
@@ -100,7 +118,14 @@ batchComparisons = [
     "Impressions",
     "Impressions click-through rate (%)"
 ]
-batchViewComparison(batchComparisons)
+
+specificComparisons = [
+    "Average percentage viewed (%)",
+    "Likes",
+    "Impressions click-through rate (%)"
+]
+
+batchViewComparison(specificComparisons)
 
 # Observations:
     # It is very easy to argue "x causes y" when it is really "y causes x." 
