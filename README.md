@@ -6,7 +6,7 @@
 1. Ideate & Create this project
 2. Document this project (continually)
 3. Complete the required assignments for this project (continually)
-4. Primary Goal: Analyze Data
+4. Primary Goal: Analyze Data (COMPLETED)
     1. Wrangle the csv into Pandas Dataframes
     2. Investigate possible correlations
     3. Widdle that down to a few top metrics
@@ -14,14 +14,12 @@
     5. Use the top metrics and the finer details to conclude which metrics were most important
     6. Write these conclusions with graphs in a report style markdown file
 5. Secondary Goal: Program an Analysis Tool
-    1. Collect averages from my videos (successful and unsuccessful) and store those in a program
-    2. Create a program that takes in a csv value and points out abnormal figures (both good and bad)
-    3. Make a short tutorial for how to input this data
-    4. Write some possible interpretations for these abnormal figures
-6. Strech Goals:
-    1. Create a UI for this program
-    2. Make it so that the UI displays graphs for the main metrics
-    3. Make the UI look very clean
+    1. Make a database that holds averages for the main metrics
+    2. Make a program similar to the data analysis tool for uploading any csv
+    3. Make it CLI based with guidance for the user
+    4. After all this, program the functionality
+    5. Make sure everything is cleaned up
+6. Final Goal: Create the Presentation
 
 ### Goal Log
 | Goal | Date | Time | TOTAL | Notes |
@@ -37,4 +35,6 @@
 | Assignment | 11/14 | 4:00 | 15:00 | Created System Design and a more robust ERD in Google Drive |
 | Data Analysis | 11/25 | 2:00 | 17:00 | Chose the specific metrics and constructed equations using the data |
 | Documentation | 11/25 | 2:00 | 19:00 | Created the [Expected values report](./Data-Analysis/Expected_values_report.md) and calculated a lot of figures as well as recorded a lot of my thoughts about what the figures could mean and how they might fall short |
+| Documentation | 11/26 | 0:30 | 19:30 | Updated these goals to be more realistic for the time I currently have |
+| Analysis Tool | 11/26 | 0:30 | 20:00 | Wrote [YouTube Analyzer Plan](./YouTube-Analysis-CLI-Program/YouTube-Analyzer-Plan.md), which is an outline of what I want the CLI program to do. This will streamline the actual programming part. |
 | To | Be | Continued | Over | Time... |
