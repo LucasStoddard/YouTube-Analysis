@@ -37,4 +37,6 @@
 | Documentation | 11/25 | 2:00 | 19:00 | Created the [Expected values report](./Data-Analysis/Expected_values_report.md) and calculated a lot of figures as well as recorded a lot of my thoughts about what the figures could mean and how they might fall short |
 | Documentation | 11/26 | 0:30 | 19:30 | Updated these goals to be more realistic for the time I currently have |
 | Analysis Tool | 11/26 | 0:30 | 20:00 | Wrote [YouTube Analyzer Plan](./YouTube-Analysis-CLI-Program/YouTube-Analyzer-Plan.md), which is an outline of what I want the CLI program to do. This will streamline the actual programming part. |
+| Assignment | 11/29 | 3:00 | 23:00 | Created the presentation and adjusted some code for clean graphs |
+| Assignment | 11/30  | 3:00 | 26:00 | Finished the presentation and added polish |
 | To | Be | Continued | Over | Time... |

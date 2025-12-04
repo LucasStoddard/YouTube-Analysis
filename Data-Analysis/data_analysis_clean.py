@@ -122,7 +122,9 @@ batchComparisons = [
 specificComparisons = [
     "Average percentage viewed (%)",
     "Likes",
-    "Impressions click-through rate (%)"
+    "Impressions click-through rate (%)",
+    "Comments added",
+    "Likes (vs. dislikes) (%)"
 ]
 
 batchViewComparison(specificComparisons)
