@@ -41,4 +41,5 @@
 | Assignment | 11/30  | 3:00 | 26:00 | Finished the presentation and added polish |
 | Assignment | 12/1 | 1:00 | 27:00 | Final Project Collaboration and Reviews |
 | Analysis Tool | 12/5 | 3:00 | 30:00 | Work on [YouTube Analyzer](./YouTube-Analysis-CLI-Program/YouTube-Analyzer.py), still need figures |
+| Analysis Tool | 12/5 | 1:00 | 31:00 | Used a Google Sheet for figure calculation |
 | To | Be | Continued | Over | Time... |
