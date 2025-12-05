@@ -39,4 +39,6 @@
 | Analysis Tool | 11/26 | 0:30 | 20:00 | Wrote [YouTube Analyzer Plan](./YouTube-Analysis-CLI-Program/YouTube-Analyzer-Plan.md), which is an outline of what I want the CLI program to do. This will streamline the actual programming part. |
 | Assignment | 11/29 | 3:00 | 23:00 | Created the presentation and adjusted some code for clean graphs |
 | Assignment | 11/30  | 3:00 | 26:00 | Finished the presentation and added polish |
+| Assignment | 12/1 | 1:00 | 27:00 | Final Project Collaboration and Reviews |
+| Analysis Tool | 12/5 | 3:00 | 30:00 | Work on [YouTube Analyzer](./YouTube-Analysis-CLI-Program/YouTube-Analyzer.py), still need figures |
 | To | Be | Continued | Over | Time... |
